@@ -1,0 +1,21 @@
+{
+  "name": "toolaby",
+  "version": "1.8.0",
+  "description": "Paid plans, licences, subscriptions, trials and the paywall for Chrome extensions, on your own Stripe account. Toolaby's MCP server, skills and commands: your agent creates the plans, gates the paid code, checks its work and proves the paid feature unlocks on Test.",
+  "author": {
+    "name": "Toolaby",
+    "url": "https://toolaby.app"
+  },
+  "homepage": "https://toolaby.app/docs/agents",
+  "repository": "https://github.com/toolaby/claude-plugin",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "payments",
+    "stripe",
+    "subscriptions",
+    "licensing",
+    "paywall",
+    "mcp"
+  ]
+}
