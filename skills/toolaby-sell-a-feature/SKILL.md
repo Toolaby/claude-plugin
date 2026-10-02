@@ -19,7 +19,7 @@ Read `TOOLABY.md` at the project's root first: the files Toolaby owns, where `to
    A Pro mark: `toolaby.has('export')`, for display only.
 5. An answer with `keyChanged`: `npx -y toolaby@latest upgrade <tool>`, then rebuild and reload.
 
-A free allowance first: free uses that never reset are Access (`npx -y toolaby@latest access <tool> --access free_uses --free-uses 10`) with `gate()` and no feature. An allowance per day is counted in code, then `gate({ feature })` past it: `TOOLABY.md`, "a daily allowance".
+A free allowance first: Access, with `gate()` and no feature — free uses for good (`npx -y toolaby@latest access <tool> --access free_uses --free-uses 10`), or each day, week or month, counted by Toolaby in UTC (`--free-uses 3 --free-uses-per day`): `TOOLABY.md`, "a daily allowance".
 
 For an extension already in users' hands: Access and features reach installed copies at their next check, without a release. Ship the build that gates by feature before changing Access.
 
