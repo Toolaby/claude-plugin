@@ -25,7 +25,7 @@ Toolaby runs accounts, licences, subscriptions, trials, seats and the paywall fo
 | ExtensionPay or ExtPay in the code | toolaby-extensionpay-move |
 | Where `gate()` goes: background, popup, side panel, content script; a `check` code | toolaby-extension-patterns |
 
-Customers and support: `customer <tool> <email>` (entitled, plan, subscription and renewal), `grant`, `refund`, `cancel`, each a command and an MCP tool. A server of the developer's: webhooks (https://toolaby.app/docs/reference/webhooks.md) and the API (https://toolaby.app/docs/reference/api.md), with a key from `npx -y toolaby@latest api-keys create --env-file .env`.
+Customers and support: `customer <tool> <email>` (entitled, plan, subscription and renewal), `grant`, `refund`, `cancel`, each a command and an MCP tool. A server of the developer's: webhooks (https://toolaby.app/docs/reference/webhooks.md), its endpoint registered with `toolaby_add_webhook` (`npx -y toolaby@latest webhooks add <url> --env-file .env`), and the API (https://toolaby.app/docs/reference/api.md), with a key from `npx -y toolaby@latest api-keys create --env-file .env`.
 
 ## Safety
 

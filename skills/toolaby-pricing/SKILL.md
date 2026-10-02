@@ -19,7 +19,7 @@ Read `TOOLABY.md` at the project's root first: the files Toolaby owns, where `to
 - A price cannot be edited: add a plan, then `toolaby_retire_plan` (`npx -y toolaby@latest plan retire <tool> <plan>`). Holders keep theirs. The `default` plan cannot be retired.
 - `toolaby_update_plan` changes a plan's name, trial, devices or per seat, for the next checkouts.
 - Trials are on subscriptions only, 0 to 365 days, one per inbox per tool. A trial unlocks as a paid plan does.
-- The Free plan: `toolaby_set_access` (`npx -y toolaby@latest access <tool> --access open|free_uses|paid [--free-uses N] [--sign-in-required]`). A feature a plan sells is refused on any of them.
+- The Free plan: `toolaby_set_access` (`npx -y toolaby@latest access <tool> --access open|free_uses|paid [--free-uses N] [--sign-in-required]`). A feature a plan sells is refused on any of them. While copies are installed, a Free plan that counts uses is not opened: copies that gate with a bare `gate()` would run everything free. Ship the build that gates by feature, and leave opening it to the person after the release (`--now` then).
 - A coupon, such as a free purchase for a store reviewer (the code expires in 30 days): `toolaby_create_coupon` (`npx -y toolaby@latest coupon create <tool> --percent-off 100 --code REVIEW --max-redemptions 1 --expires-days 30`). A coupon of the whole price is a pass, which the Hobby plan limits. `toolaby_grant` gives one address access with no checkout.
 - An answer with `keyChanged` (the Free plan, or the first subscription plan): `npx -y toolaby@latest upgrade <tool>`, then rebuild.
 - Prices are per side: Copy to Live makes them on Live (the toolaby-ship skill).
