@@ -4,7 +4,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "toolaby@latest",
+        "toolaby@1.11.1",
         "mcp"
       ]
     }
