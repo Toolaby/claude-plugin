@@ -15,7 +15,7 @@ Read `TOOLABY.md` at the project's root first: the files Toolaby owns, where `to
 | Per seat, for teams | `… --per-seat`: checkout asks *For me* or *For a team*, 2 to 100 seats |
 | Devices per buyer | `… --devices 2` (1 to 10) |
 
-- Plans with the same name share a tier. Give each plan of a tier the same features: list every plan id in `toolaby_set_features`.
+- A plan's name is its tier, such as Pro: buyers read Pro · Monthly, Pro · Yearly, Pro · Lifetime, so never name a plan after its billing. Plans with the same name share a tier. Give each plan of a tier the same features: list every plan id in `toolaby_set_features`.
 - A price cannot be edited: add a plan, then `toolaby_retire_plan` (`npx -y toolaby@latest plan retire <tool> <plan>`). Holders keep theirs. The `default` plan cannot be retired.
 - `toolaby_update_plan` changes a plan's name, trial, devices or per seat, for the next checkouts.
 - Trials are on subscriptions only, 0 to 365 days, one per inbox per tool. A trial unlocks as a paid plan does.
