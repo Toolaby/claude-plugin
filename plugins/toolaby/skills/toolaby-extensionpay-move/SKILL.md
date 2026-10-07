@@ -8,7 +8,7 @@ description: "Moves an extension from ExtensionPay (ExtPay, extpay, extensionpay
 Read `TOOLABY.md` at the project's root first: the files Toolaby owns, where `toolaby.js` is imported from in this kind of project, the tool's plans and features now, and the rules. No `TOOLABY.md`: the extension is not wired yet (the toolaby skill says how).
 
 1. The tool, on Test: `npx -y toolaby@latest tool create --name "…"` if there is none.
-2. In the extension's folder: `npx -y toolaby@latest wire <tool> --from-extensionpay`. Without the flag, `wire` stops when it finds ExtensionPay and writes nothing.
+2. Ask your person which paywall people meet first: Toolaby's sign-in and plans, before their popup when they may not use it yet (recommended), or ExtensionPay's page, as it was. Then, in the extension's folder: `npx -y toolaby@latest wire <tool> --from-extensionpay --toolaby-popup`, or `--own-popup`. Without one of them and with no terminal, `wire` stops and writes nothing; without `--from-extensionpay`, it stops when it finds ExtensionPay.
 3. Keep the `ExtPay('…')` calls: Toolaby answers `getUser()`, `getPlans()`, `openPaymentPage()`, `openTrialPage()`, `onPaid` and the rest. The plans were copied with their nicknames as tiers, which `openPaymentPage('pro')` finds.
 4. Fix what `wire` lists to change by hand. A bundle with ExtensionPay inside (`dist/…`) is switched by building it again from the switched source.
 5. No `extpay` import, ExtensionPay host or extensionpay.com content script may be left: search the code and the manifest.
