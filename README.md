@@ -19,7 +19,7 @@ In Claude Code:
 
 Then sign in once: ask Claude to sign in to Toolaby (it calls `toolaby_sign_in` and gives you a link and a code), or run `npx -y toolaby@latest login` in a terminal. Node.js 20 or later.
 
-The plugin carries the MCP server itself: in Claude Code you do not also need `npx -y toolaby@latest agents` (which adds the same server to Codex, Cursor, VS Code and Gemini CLI). Setup for every client: https://toolaby.app/docs/agents.
+The plugin carries the MCP server itself: the command line's own code, in `plugins/toolaby/server`, run with Node.js, so nothing is downloaded when it starts. In Claude Code you do not also need `npx -y toolaby@latest agents` (which adds the same server to Codex, Cursor, VS Code and Gemini CLI). Setup for every client: https://toolaby.app/docs/agents.
 
 ## Commands
 

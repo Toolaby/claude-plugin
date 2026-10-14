@@ -1,0 +1,13 @@
+{
+  "name": "toolaby",
+  "version": "1.15.1",
+  "description": "The Toolaby command line: wire any Chrome extension to your Toolaby tool (sign-in, licences, subscriptions, the paywall), move one from ExtensionPay or start a new one; check it, pack it for the Chrome Web Store, and give coding agents Toolaby as an MCP server.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "toolaby-cli": "bin.mjs"
+  }
+}

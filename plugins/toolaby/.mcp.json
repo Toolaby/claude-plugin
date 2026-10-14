@@ -1,10 +1,9 @@
 {
   "mcpServers": {
     "toolaby": {
-      "command": "npx",
+      "command": "node",
       "args": [
-        "-y",
-        "toolaby@1.15.1",
+        "${CLAUDE_PLUGIN_ROOT}/server/bin.mjs",
         "mcp"
       ]
     }
