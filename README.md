@@ -41,4 +41,8 @@ Everything acts on Test (`toolaby.app/test`) unless told `--live`: nothing there
 - Every page as Markdown: https://toolaby.app/llms.txt
 - The command line: https://toolaby.app/docs/cli
 
+## Privacy
+
+What the plugin and its MCP server keep and send: [Privacy Policy](https://toolaby.app/privacy#command-line). In short: your Toolaby session stays in a file on your computer, and everything goes to Toolaby, as the dashboard does.
+
 This repository is generated from the Toolaby product; issues and questions: hello@toolaby.app.
