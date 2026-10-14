@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "toolaby": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "toolaby@1.15.1",
+        "mcp"
+      ]
+    }
+  }
+}
